@@ -2,8 +2,8 @@
 $("#load").on('click', function() {
 	p1wins = store.get("p1score");
 	p2wins = store.get("p2score");
-	console.log(p1wins + "working?");
-	console.log(p2wins + "working?2");
+	$('#p1wins').text(p1wins);
+	$('#p2wins').text(p2wins);
 });
 //Takes player names from modal form and clears form after
 var p1wins = 0,
