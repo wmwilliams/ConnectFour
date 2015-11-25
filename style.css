@@ -1,34 +1,44 @@
-
+body {
+	background-color: #3778BC;
+}
+button#enterSite {
+	color: black;
+}
+nav.navvy {
+	background-color: rgba(35, 53, 78, .5);
+	border: 2px solid #233548;
+}
 .modal-content {
    background-color: #BFCFE9;
 }
 h4 {
 	display: inline;
-	color: grey;
+	color: black;
 }
 p {
 	display: inline;
-	color: grey;
+	color: black;
 }
 h5 {
-	color: grey;
+	color: black;
 }
 #board .columns li {
 	height: 76px;
 	width: 75px;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	border-left: 2px solid yellow;
-	border-right: 2px solid yellow;
+	border-left: 6px solid rgba(255, 255, 60, .8);
+	border-right: 6px solid rgba(255, 255, 60, .8);
+	border-top: 3px solid rgba(255, 255, 60, .8);
+	border-bottom: 3px solid rgba(255, 255, 60, .8);
 	margin: 0px;
 }
 #board ul {
 	display: inline-block;
 	list-style-type: none;
     margin: 0;
+    padding: 0%;
 }
 .icon {
-	color: grey;
+	color: black;
 	font-size: 40px;
 	margin: auto 10px;
 }
