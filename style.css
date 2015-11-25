@@ -1,0 +1,26 @@
+body {
+	background-color: #BFCFE9;
+}
+.modal-content {
+   background-color: #BFCFE9;
+}
+h3 {
+	display: inline;
+	color: grey;
+}
+p {
+	display: inline;
+	color: grey;
+}
+#board .columns li {
+	height: 70px;
+	border: 1px solid black;
+	margin: 0;
+}
+ul {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0px;
+    letter-spacing: -5px;
+    margin: 0;
+}
