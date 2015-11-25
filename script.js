@@ -106,7 +106,7 @@ var checkWinner = function(array,i,j) {
 	 else {
 		console.log("NO winner yet");
 	}
-}
+};
 
 
 
