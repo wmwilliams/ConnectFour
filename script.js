@@ -27,7 +27,7 @@ var board = [
 	[0, 0, 0, 0, 0, 0],
 	[0, 0, 0, 0, 0, 0],
 ];
-$("ul").on("click", function EventHandler(e) {
+$("ul.columns").on("click", function EventHandler(e) {
 	e = e;
 	var target = (e.target.tagName === "IMG" ? e.target.closest('li') : e.target);
 	var columns = target.parentElement.children;
