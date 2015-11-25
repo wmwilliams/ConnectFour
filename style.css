@@ -20,6 +20,7 @@ p {
 	color: black;
 }
 h5 {
+	display: inline;
 	color: black;
 }
 #board .columns li {
