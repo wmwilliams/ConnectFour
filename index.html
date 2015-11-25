@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mockup 1</title>
+		<title>ConnectFour</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
@@ -18,8 +18,24 @@
 			</div>
 		</nav>
 
-		<section class='container-fluid row1'>
-			<
+		<section class='container-fluid'>
+			<div class="col-md-4 col-md-offset-2">
+				<h2>Introduction</h2>
+				<p>Connect 4 is a classic board game that was published in 1974 by toy producer Hasbro. Its timeless simplicity made it one of my favorite games as a kid. Although at the time I had no idea, Connect 4 is a "solved" game, meaning if played correctly the first player should always be able to win.</p>
+				<h2>Rules</h2>
+				<p>The rules of the game are simple. Players take turns dropping their game piece into a selected column, and the first person to get 4 in a row wins. You can connect your pieces either vertically, horizontally, or even diagonally. </p>	
+			</div>		
+			<div class="col-md-4">
+				<img class="img-responsive img-rounded" id="connectPic" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR42yAq5fJp5S19dA-9XLvsKn4SiA7HRtWvA6w79ZPXVQJ8Rei5">
+			</div>
+		</section>
+
+		<section class="container-fluid text-center">
+			<h3 class="text-center">Are you ready to get playing?</h3>
+			<br>
+			<form action="game.html">
+    			<button type="submit" class="btn-lg btn-info btn">Enter</button>
+			</form>
 		</section>
 
 		<footer class="container-fluid">
@@ -28,6 +44,7 @@
 				<br>
 				<p>&copy; Copyright 2047. Some rights reserved.</p>
 			</div>
+
 		</footer>
 	</body>
 </html>

@@ -32,7 +32,12 @@ h5 {
 	font-size: 40px;
 	margin: auto 10px;
 }
-img {
+li img {
 	height: 75px;
 	width: 75px;
+}
+img#connectPic {
+	position: fixed;
+	margin-top: 7%;
+	margin-left: 5%;
 }
