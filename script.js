@@ -22,8 +22,7 @@ var p1wins = 0,
 $('#playerEntry').on("click", function() {
 	$('#p1board').text($('#firstPlayer').val()); 
 	$('#p2board').text($('#secondPlayer').val()); 
-	$('#p1wins').text(p1wins),
-	$('#p2wins').text(p2wins),
+	store.clear();
 	$('.modalForm').find('form')[0].reset();
 });
 $('#reset').on('click', function() {
