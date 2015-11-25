@@ -1,6 +1,4 @@
-body {
-	background-color: #BFCFE9;
-}
+
 .modal-content {
    background-color: #BFCFE9;
 }
@@ -18,10 +16,15 @@ p {
 	border: 1px solid black;
 	margin: 0;
 }
-ul {
+#board ul {
 	display: inline-block;
 	list-style-type: none;
 	padding: 0px;
     letter-spacing: -5px;
     margin: 0;
+}
+.icon {
+	color: grey;
+	font-size: 40px;
+	margin: auto 10px;
 }

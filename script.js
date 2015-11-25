@@ -4,9 +4,6 @@ $('#playerEntry').on("click", function() {
 	$('#p2board').text($('#secondPlayer').val()); 
 	$('.modalForm').find('form')[0].reset();
 });
-var playerOne = $('#p1board'),
-    playerTwo = $('#p2board');
-
 //When the board is clicked.......
 var whosUp;
 var moveCount = 0;
@@ -33,15 +30,12 @@ $("ul").on("click", function EventHandler(e) {
 			var img = document.createElement('img');
 			img.className = 'img-responsive';
 			img.src = imgUrl;
-
 			columns[i].appendChild(img);
-
 			var maybe = columns[i].id;
 			board[parent][maybe] = whosUp;
 			checkWinner(board,parent,maybe);
+			console.log(whosUp);
 			break;
-		} else {
-			console.log("Try Again!");
 		}
 	}
 });
@@ -54,7 +48,7 @@ var checkWinner = function(array,i,j) {
 		j = parseInt(j);
 //check vertical wins
 	if(j >= 3 && array[i][j] !== 0 && array[i][j] === array[i][j-1] && array[i][j-1] === array[i][j-2] && array[i][j-2] === array[i][j-3]) {
-	alert("It looks like we have a winner!" )
+	alert("It looks like player " + whosUp + " is the winner!")
 	} //check horizontal wins
 	  //should check horizontally to the left of piece played
 	else if(i >= 3 && array[i][j] !== 0 && array[i][j] === array[i-1][j] && array[i-1][j] === array[i-2][j] && array[i-2][j] === array[i-3][j]) {
