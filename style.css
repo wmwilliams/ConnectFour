@@ -10,6 +10,9 @@ p {
 	display: inline;
 	color: grey;
 }
+h5 {
+	color: grey;
+}
 #board .columns li {
 	height: 76px;
 	width: 75px;
@@ -17,7 +20,7 @@ p {
 	border-bottom: 1px solid black;
 	border-left: 2px solid yellow;
 	border-right: 2px solid yellow;
-	margin: 0;
+	margin: 0px;
 }
 #board ul {
 	display: inline-block;
