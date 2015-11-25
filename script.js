@@ -1,7 +1,10 @@
 //Hopefully ill get this to load last games names and scores....
-// $("#load").on('click', function() {
-
-// })
+$("#load").on('click', function() {
+	p1wins = store.get("p1score");
+	p2wins = store.get("p2score");
+	console.log(p1wins + "working?");
+	console.log(p2wins + "working?2");
+});
 //Takes player names from modal form and clears form after
 var p1wins = 0,
 	p2wins = 0,
@@ -65,11 +68,13 @@ var score = function() {
 		alert("It looks like player 1 has won.");
 		p1wins++;
 		$('#p1wins').text(p1wins);
+		store.set('p1score', p1wins);
 	} else {
 		moveCount = 0;
 		alert("It looks like player 2 has won.");
 		p2wins++;
 		$('#p2wins').text(p2wins);
+		store.set('p2score', p2wins);
 	}
 };
 
